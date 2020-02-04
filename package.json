@@ -1,0 +1,27 @@
+{
+  "name": "ace-lib-theme",
+  "version": "1.0.0",
+  "description": "ace-lib-theme is a Sass-powered style sheet theme builder utility for ace-lib components. It can be directly dropped into your Sass powered cui templates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agileapps-dev-com/ace-lib-theme.git"
+  },
+  "keywords": [
+    "ace-lib-theme",
+    "ace-lib",
+    "theme",
+    "ace-lib",
+    "theme",
+    "roller"
+  ],
+  "author": "agileapps.dev.com@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agileapps-dev-com/ace-lib-theme/issues"
+  },
+  "homepage": "https://github.com/agileapps-dev-com/ace-lib-theme#readme"
+}
