@@ -4,7 +4,10 @@
   "description": "ace-lib-theme is a Sass-powered style sheet theme builder utility for ace-lib components. It can be directly dropped into your Sass powered cui templates.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"css": "npm run css-compile && npm run css-minify",
+    "css-compile": "node-sass  --output-style expanded --source-map true --source-map-contents true --precision 6 assets/scss/ -o dist/css/",
+	"css-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/ace-theme.min.css dist/css/ace-theme.css"
   },
   "repository": {
     "type": "git",
@@ -23,5 +26,11 @@
   "bugs": {
     "url": "https://github.com/agileapps-dev-com/ace-lib-theme/issues"
   },
-  "homepage": "https://github.com/agileapps-dev-com/ace-lib-theme#readme"
+  "homepage": "https://github.com/agileapps-dev-com/ace-lib-theme#readme",
+  "devDependencies": {
+    "clean-css-cli": "^4.3.0"
+  },
+  "dependencies": {
+    "@angular/material": "^7.2.2"
+  }
 }
