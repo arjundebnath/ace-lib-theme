@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"css": "npm run css-compile && npm run css-minify",
+    "css": "npm run css-compile && npm run css-minify",
     "css-compile": "node-sass  --output-style expanded --source-map true --source-map-contents true --precision 6 assets/scss/ -o dist/css/",
-	"css-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/ace-theme.min.css dist/css/ace-theme.css",
-	"css-examples": "npm run css-examples-compile && npm run css-examples-minify",
-	"css-examples-compile": "node-sass  --output-style expanded --source-map true --source-map-contents true --precision 6 ./examples/scss/ -o ./examples/css",
-	"css-examples-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output ./examples/css/blue-green/ace-theme.min.css ./examples/css/blue-green/ace-theme.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output ./examples/css/pink/ace-theme.min.css ./examples/css/pink/ace-theme.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output ./examples/css/teal/ace-theme.min.css ./examples/css/teal/ace-theme.css"
+    "css-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output dist/css/ace-theme.min.css dist/css/ace-theme.css",
+    "css-examples": "npm run css-examples-compile && npm run css-examples-minify",
+    "css-examples-compile": "node-sass  --output-style expanded --source-map true --source-map-contents true --precision 6 ./examples/scss/ -o ./examples/css",
+    "css-examples-minify": "cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output ./examples/css/blue-green/ace-theme.min.css ./examples/css/blue-green/ace-theme.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output ./examples/css/pink/ace-theme.min.css ./examples/css/pink/ace-theme.css && cleancss --level 1 --format breakWith=lf --source-map --source-map-inline-sources --output ./examples/css/teal/ace-theme.min.css ./examples/css/teal/ace-theme.css"
   },
   "repository": {
     "type": "git",

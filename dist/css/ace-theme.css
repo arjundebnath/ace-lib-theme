@@ -121,22 +121,22 @@ html > body {
 
 .ace-theme aac-activity-history .date-style,
 .cdk-overlay-container aac-activity-history .date-style {
-  color: #902dec;
+  color: #3f51b5;
 }
 
 .ace-theme aac-activity-history .time-line-container:before,
 .cdk-overlay-container aac-activity-history .time-line-container:before {
-  border-right: 4px solid #902dec;
+  border-right: 4px solid #3f51b5;
 }
 
 .ace-theme aac-activity-history .timeline-divider,
 .cdk-overlay-container aac-activity-history .timeline-divider {
-  border: 7px solid #902dec;
+  border: 7px solid #3f51b5;
 }
 
 .ace-theme aac-activity-history .timeline-icon,
 .cdk-overlay-container aac-activity-history .timeline-icon {
-  border: 1px solid #902dec;
+  border: 1px solid #3f51b5;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -150,19 +150,19 @@ html > body {
 
 .ace-theme aac-activity-history .timeline-image,
 .cdk-overlay-container aac-activity-history .timeline-image {
-  box-shadow: 1px 1px 1px 0px #902dec;
+  box-shadow: 1px 1px 1px 0px #3f51b5;
 }
 
 .ace-theme .mat-autocomplete-panel,
 .cdk-overlay-container .mat-autocomplete-panel {
   background: #fff none;
-  border-left: 1px solid #902dec;
-  border-right: 1px solid #902dec;
+  border-left: 1px solid #3f51b5;
+  border-right: 1px solid #3f51b5;
 }
 
 .ace-theme .mat-autocomplete-panel .mat-option,
 .cdk-overlay-container .mat-autocomplete-panel .mat-option {
-  border-bottom: 1px solid #902dec;
+  border-bottom: 1px solid #3f51b5;
   height: auto;
   line-height: inherit;
   padding: 2px 5px;
@@ -170,7 +170,7 @@ html > body {
 
 .ace-theme .mat-autocomplete-panel .mat-option.mat-active,
 .cdk-overlay-container .mat-autocomplete-panel .mat-option.mat-active {
-  color: #902dec;
+  color: #3f51b5;
 }
 
 .ace-theme .mat-chip,
@@ -196,7 +196,7 @@ html > body {
 
 .ace-theme .mat-chip:focus,
 .cdk-overlay-container .mat-chip:focus {
-  color: #902dec;
+  color: #3f51b5;
 }
 
 .ace-theme .ace-field-input,
@@ -207,7 +207,7 @@ html > body {
 
 .ace-theme .ace-field-input:focus,
 .cdk-overlay-container .ace-field-input:focus {
-  border: 1px solid #902dec;
+  border: 1px solid #3f51b5;
   box-shadow: none;
 }
 
@@ -219,7 +219,7 @@ html > body {
 
 .ace-theme .ace-field-select:focus,
 .cdk-overlay-container .ace-field-select:focus {
-  border: 1px solid #902dec;
+  border: 1px solid #3f51b5;
   box-shadow: none;
 }
 
@@ -231,7 +231,7 @@ html > body {
 
 .ace-theme .ace-field-textarea:focus,
 .cdk-overlay-container .ace-field-textarea:focus {
-  border: 1px solid #902dec;
+  border: 1px solid #3f51b5;
   box-shadow: none;
 }
 
@@ -256,7 +256,7 @@ html > body {
   content: "";
   width: 1rem;
   height: 1rem;
-  border: 1px solid #902dec;
+  border: 1px solid #3f51b5;
   border-radius: 50%;
   left: 0;
   top: 0;
@@ -272,7 +272,7 @@ html > body {
   content: "";
   width: 0.5rem;
   height: 0.5rem;
-  background: #902dec none;
+  background: #3f51b5 none;
   top: 0.25rem;
   border-radius: 50%;
   left: 0.25rem;
@@ -284,7 +284,7 @@ html > body {
 
 .ace-theme .aac-radio-label:focus-within:before,
 .cdk-overlay-container .aac-radio-label:focus-within:before {
-  box-shadow: inset 0 0 0 1px #8125d6;
+  box-shadow: inset 0 0 0 1px #132691;
 }
 
 .ace-theme .aac-checkbox-label,
@@ -308,7 +308,7 @@ html > body {
   content: "";
   width: 1rem;
   height: 1rem;
-  border: 1px solid #902dec;
+  border: 1px solid #3f51b5;
   border-radius: 0%;
   left: 0;
   top: 0;
@@ -324,8 +324,8 @@ html > body {
   content: "";
   height: 0.3rem;
   width: 0.6rem;
-  border-left: 0.125rem solid #902dec;
-  border-bottom: 0.125rem solid #902dec;
+  border-left: 0.125rem solid #3f51b5;
+  border-bottom: 0.125rem solid #3f51b5;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -335,7 +335,7 @@ html > body {
 
 .ace-theme .aac-checkbox-label:focus-within:before,
 .cdk-overlay-container .aac-checkbox-label:focus-within:before {
-  box-shadow: inset 0 0 0 1px #8125d6;
+  box-shadow: inset 0 0 0 1px #132691;
 }
 
 .ace-theme .input-group.ace-hide-action-links > .custom-select,
@@ -373,7 +373,7 @@ html > body {
 
 .ace-theme .mat-datepicker-content .mat-calendar-header .mat-calendar-controls button:focus,
 .cdk-overlay-container .mat-datepicker-content .mat-calendar-header .mat-calendar-controls button:focus {
-  outline: 5px auto #902dec;
+  outline: 5px auto #3f51b5;
 }
 
 .ace-theme .mat-datepicker-content .mat-calendar-header .mat-calendar-controls .mat-icon-button,
@@ -388,8 +388,8 @@ html > body {
 
 .ace-theme .mat-datepicker-content .mat-calendar-content .mat-calendar-table .mat-calendar-body-active,
 .cdk-overlay-container .mat-datepicker-content .mat-calendar-content .mat-calendar-table .mat-calendar-body-active {
-  background: #f0e7f8;
-  color: #333333;
+  background: #abb2d8;
+  color: #000000;
 }
 
 .ace-theme .mat-datepicker-content .mat-calendar-content .mat-calendar-table .mat-calendar-body-cell-content,
@@ -399,7 +399,7 @@ html > body {
 
 .ace-theme .mat-datepicker-content .mat-calendar-content .mat-calendar-table .mat-calendar-body-cell-content.mat-calendar-body-selected,
 .cdk-overlay-container .mat-datepicker-content .mat-calendar-content .mat-calendar-table .mat-calendar-body-cell-content.mat-calendar-body-selected {
-  background: #902dec;
+  background: #3f51b5;
   color: #ffffff;
 }
 
@@ -426,7 +426,7 @@ html > body {
 
 .ace-theme .mat-paginator .mat-paginator-container .mat-paginator-range-actions button:not(:disabled),
 .cdk-overlay-container .mat-paginator .mat-paginator-container .mat-paginator-range-actions button:not(:disabled) {
-  color: #902dec;
+  color: #3f51b5;
 }
 
 .ace-theme .mat-paginator .mat-paginator-container .mat-paginator-range-actions button:disabled,
@@ -461,7 +461,7 @@ html > body {
 .cdk-overlay-container .mat-table > .mat-row > .mat-cell {
   padding: 5px;
   align-self: stretch;
-  border-color: #f0e7f8;
+  border-color: #abb2d8;
   border-style: solid;
   border-width: 0 0px 1px 0;
 }
@@ -486,7 +486,7 @@ html > body {
 .cdk-overlay-container .mat-table > .mat-row > .mat-header-cell {
   padding: 5px;
   align-self: stretch;
-  border-color: #f0e7f8;
+  border-color: #abb2d8;
   border-style: solid;
   border-width: 0 0px 1px 0;
 }
@@ -529,7 +529,7 @@ html > body {
 .ace-theme .ace-table-hover .mat-table > .mat-header-row:hover,
 .cdk-overlay-container .ace-table-hover .mat-table > .mat-row:hover,
 .cdk-overlay-container .ace-table-hover .mat-table > .mat-header-row:hover {
-  background-color: #f0e7f8;
+  background-color: #abb2d8;
 }
 
 .ace-theme .mat-tab-group:not(.hide-mat-tab-header) .mat-tab-header,
@@ -552,25 +552,26 @@ html > body {
   min-width: inherit;
   opacity: 1;
   height: 40px;
+  margin-bottom: 4px;
   align-items: flex-end;
 }
 
 .ace-theme .mat-tab-group:not(.hide-mat-tab-header) .mat-tab-header .mat-tab-label-container .mat-tab-labels .mat-tab-label .mat-tab-label-content,
 .cdk-overlay-container .mat-tab-group:not(.hide-mat-tab-header) .mat-tab-header .mat-tab-label-container .mat-tab-labels .mat-tab-label .mat-tab-label-content {
-  border: 2px solid #902dec;
+  border: 2px solid #3f51b5;
   padding: 5px 20px;
   border-radius: 10px 10px 0 0;
-  background-color: #902dec;
+  background-color: #3f51b5;
   color: #ffffff;
   margin-bottom: -2px;
 }
 
 .ace-theme .mat-tab-group:not(.hide-mat-tab-header) .mat-tab-header .mat-tab-label-container .mat-tab-labels .mat-tab-label.mat-tab-label-active .mat-tab-label-content,
 .cdk-overlay-container .mat-tab-group:not(.hide-mat-tab-header) .mat-tab-header .mat-tab-label-container .mat-tab-labels .mat-tab-label.mat-tab-label-active .mat-tab-label-content {
-  border: 2px solid #902dec;
+  border: 2px solid #3f51b5;
   border-bottom-color: #ffffff;
   background-color: #ffffff;
-  color: #902dec;
+  color: #3f51b5;
   border-bottom: 0px;
   margin-bottom: -3px;
 }
@@ -582,7 +583,7 @@ html > body {
 
 .ace-theme .mat-tab-group:not(.hide-mat-tab-header) .mat-tab-body-wrapper,
 .cdk-overlay-container .mat-tab-group:not(.hide-mat-tab-header) .mat-tab-body-wrapper {
-  border: 2px solid #902dec;
+  border: 2px solid #3f51b5;
   border-radius: 0 10px 10px;
   background-color: #fff;
 }
@@ -594,7 +595,7 @@ html > body {
 
 .ace-theme .mat-tooltip,
 .cdk-overlay-container .mat-tooltip {
-  background-color: #333333;
+  background-color: #000000;
   font-size: 80%;
   margin: 0;
   max-width: 100%;
@@ -617,9 +618,9 @@ html > body {
 
 .ace-theme .ace-btn:not(:disabled):not(.disabled):hover,
 .cdk-overlay-container .ace-btn:not(:disabled):not(.disabled):hover {
-  color: #333333;
-  background-color: #f0e7f8;
-  border-color: #902dec;
+  color: #000000;
+  background-color: #abb2d8;
+  border-color: #3f51b5;
   outline: none;
   box-shadow: none;
 }
@@ -632,18 +633,18 @@ html > body {
 .ace-theme .ace-btn:not(:disabled):not(.disabled):focus, .ace-theme .ace-btn:not(:disabled):not(.disabled):active:focus,
 .cdk-overlay-container .ace-btn:not(:disabled):not(.disabled):focus,
 .cdk-overlay-container .ace-btn:not(:disabled):not(.disabled):active:focus {
-  color: #333333;
-  background-color: #f0e7f8;
-  border-color: #902dec;
+  color: #000000;
+  background-color: #abb2d8;
+  border-color: #3f51b5;
   outline: none;
   box-shadow: none;
 }
 
 .ace-theme .ace-btn:not(:disabled):not(.disabled):active,
 .cdk-overlay-container .ace-btn:not(:disabled):not(.disabled):active {
-  color: #902dec;
+  color: #3f51b5;
   background-color: transparent;
-  border: 1px solid #902dec;
+  border: 1px solid #3f51b5;
   outline: none;
   box-shadow: none;
 }
@@ -651,22 +652,22 @@ html > body {
 .ace-theme .ace-btn.ace-primary,
 .cdk-overlay-container .ace-btn.ace-primary {
   color: #ffffff;
-  background-color: #902dec;
-  border-color: #902dec;
+  background-color: #3f51b5;
+  border-color: #3f51b5;
 }
 
 .ace-theme .ace-btn.ace-accent,
 .cdk-overlay-container .ace-btn.ace-accent {
   color: #000000;
-  background-color: #ffd740;
-  border-color: #ffd740;
+  background-color: #ff4081;
+  border-color: #ff4081;
 }
 
 .ace-theme .ace-btn.ace-accent:not(:disabled):not(.disabled):hover,
 .cdk-overlay-container .ace-btn.ace-accent:not(:disabled):not(.disabled):hover {
-  color: #333333;
-  background-color: #ffeba3;
-  border-color: #ffd740;
+  color: #000000;
+  background-color: #d8b6c1;
+  border-color: #ff4081;
   outline: none;
   box-shadow: none;
 }
@@ -679,18 +680,18 @@ html > body {
 .ace-theme .ace-btn.ace-accent:not(:disabled):not(.disabled):focus, .ace-theme .ace-btn.ace-accent:not(:disabled):not(.disabled):active:focus,
 .cdk-overlay-container .ace-btn.ace-accent:not(:disabled):not(.disabled):focus,
 .cdk-overlay-container .ace-btn.ace-accent:not(:disabled):not(.disabled):active:focus {
-  color: #333333;
-  background-color: #ffeba3;
-  border-color: #ffd740;
+  color: #000000;
+  background-color: #d8b6c1;
+  border-color: #ff4081;
   outline: none;
   box-shadow: none;
 }
 
 .ace-theme .ace-btn.ace-accent:not(:disabled):not(.disabled):active,
 .cdk-overlay-container .ace-btn.ace-accent:not(:disabled):not(.disabled):active {
-  color: #ffd740;
+  color: #ff4081;
   background-color: transparent;
-  border: 1px solid #ffd740;
+  border: 1px solid #ff4081;
   outline: none;
   box-shadow: none;
 }
@@ -721,7 +722,7 @@ html > body {
 
 .ace-theme .mat-checkbox .mat-checkbox-layout .mat-checkbox-frame,
 .cdk-overlay-container .mat-checkbox .mat-checkbox-layout .mat-checkbox-frame {
-  border: 2px solid #902dec;
+  border: 2px solid #3f51b5;
 }
 
 .ace-theme .mat-checkbox .mat-checkbox-layout .mat-checkbox-checkmark,
@@ -747,7 +748,7 @@ html > body {
 
 .ace-theme .mat-checkbox.mat-checkbox-checked .mat-checkbox-background,
 .cdk-overlay-container .mat-checkbox.mat-checkbox-checked .mat-checkbox-background {
-  background-color: #902dec;
+  background-color: #3f51b5;
 }
 
 .ace-theme .mat-checkbox.mat-checkbox-checked .mat-checkbox-checkmark,
@@ -757,18 +758,18 @@ html > body {
 
 .ace-theme .mat-checkbox.mat-checkbox-indeterminate .mat-checkbox-background,
 .cdk-overlay-container .mat-checkbox.mat-checkbox-indeterminate .mat-checkbox-background {
-  background-color: #902dec;
+  background-color: #3f51b5;
 }
 
 .ace-theme .mat-radio-button .mat-radio-label .mat-radio-container .mat-radio-outer-circle,
 .cdk-overlay-container .mat-radio-button .mat-radio-label .mat-radio-container .mat-radio-outer-circle {
   border-width: 1px;
-  border-color: #902dec;
+  border-color: #3f51b5;
 }
 
 .ace-theme .mat-radio-button .mat-radio-label .mat-radio-container .mat-radio-inner-circle,
 .cdk-overlay-container .mat-radio-button .mat-radio-label .mat-radio-container .mat-radio-inner-circle {
-  background-color: #902dec;
+  background-color: #3f51b5;
 }
 
 .ace-theme .mat-radio-button.cdk-focused .mat-radio-label .mat-radio-container .mat-radio-outer-circle,
@@ -783,17 +784,17 @@ html > body {
 
 .ace-theme .mat-progress-bar .mat-progress-bar-background,
 .cdk-overlay-container .mat-progress-bar .mat-progress-bar-background {
-  fill: #f0e7f8;
+  fill: #abb2d8;
 }
 
 .ace-theme .mat-progress-bar .mat-progress-bar-buffer,
 .cdk-overlay-container .mat-progress-bar .mat-progress-bar-buffer {
-  background-color: #f0e7f8;
+  background-color: #abb2d8;
 }
 
 .ace-theme .mat-progress-bar .mat-progress-bar-fill::after,
 .cdk-overlay-container .mat-progress-bar .mat-progress-bar-fill::after {
-  background-color: #902dec;
+  background-color: #3f51b5;
 }
 
 .ace-list-group .ace-list-item {
@@ -807,12 +808,12 @@ html > body {
 .ace-theme a:visited, .ace-theme a:link,
 .cdk-overlay-container a:visited,
 .cdk-overlay-container a:link {
-  color: #8125d6;
+  color: #132691;
 }
 
 .ace-theme a:hover,
 .cdk-overlay-container a:hover {
-  color: #902dec;
+  color: #3f51b5;
 }
 
 .mat-divider {
@@ -837,11 +838,11 @@ html > body {
 }
 
 .ace-bg-primary {
-  background-color: #902dec;
+  background-color: #3f51b5;
 }
 
 .ace-bg-accent {
-  background-color: #ffd740;
+  background-color: #ff4081;
 }
 
 .ace-text-white {
@@ -849,11 +850,11 @@ html > body {
 }
 
 .ace-text-primary {
-  color: #902dec;
+  color: #3f51b5;
 }
 
 .ace-text-accent {
-  color: #ffd740;
+  color: #ff4081;
 }
 
 .ace-border-white {
@@ -861,11 +862,11 @@ html > body {
 }
 
 .ace-border-primary {
-  border-color: #902dec;
+  border-color: #3f51b5;
 }
 
 .ace-border-accent {
-  border-color: #ffd740;
+  border-color: #ff4081;
 }
 
 /*# sourceMappingURL=ace-theme.css.map */
