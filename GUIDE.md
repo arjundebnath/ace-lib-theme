@@ -34,7 +34,7 @@ Copy the `assets` directory from `node_modules` into the cui templtate's `assets
 
 ### 3. Make the necessary changes to the `scss` files
 
-Make changes to the scss files as required and then compile the scss files into `ace-theme.css`. Understand the structure of the scss files from below.
+Make changes to the scss files as required and then compile the scss files into `ace-theme.css`. [Understand the structure of the scss files](#understanding-the-structure-of-ace-lib-theme-theme) from below.
 
 >**Important Note:** It's highly recommened to retain the scss files and directory structure as it is. Use `_add-on-styles.scss` for your custom additional css style definitions.
 
