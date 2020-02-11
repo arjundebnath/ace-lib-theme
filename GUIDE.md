@@ -20,7 +20,7 @@ npm i ace-lib-theme
 
 ### 2. Copy the sass files 
 
-Copy the `scss` directory from `node_modules/ace-lib-theme/` into the cui template's `assets/themes/` directory. If you need information about how to create a cui-template, refer to the [cui-template](https://github.com/agileapps-dev-com/agileapps-cui) documentation.
+Copy the `scss` directory from `node_modules/ace-lib-theme/assets/` into the cui template's `assets/themes/` directory. If you need information about how to create a cui-template, refer to the [cui-template](https://github.com/agileapps-dev-com/agileapps-cui) documentation.
 
 ### 3. Make the necessary changes to the `scss` files
 
