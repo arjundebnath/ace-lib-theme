@@ -7,8 +7,9 @@ Use the below npm command to install
 ```shell
 npm i ace-lib-theme
 ```
-## Usage
-### Step-1 Compile SCSS files
+## Usage guide
+Follow the [usage guide](GUIDE.md).
+<!-- ### Step-1 Compile SCSS files
 Use the below command to compile the scss files.
 
 #### For core theme:
@@ -28,6 +29,6 @@ npm run css-examples
 Copy the compiled css files into the template `assets/css/` directory and link in the `index.html` file.
 
 ## Customization
-`to be updated`
+`to be updated` -->
 
 
