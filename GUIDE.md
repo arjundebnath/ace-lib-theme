@@ -34,6 +34,10 @@ Copy the `assets` directory from `node_modules` into the cui templtate's `assets
 
 ### 3. Make the necessary changes to the `scss` files
 
+Make changes to the scss files as required and then compile the scss files into `ace-theme.css`. Understand the structure of the scss files from below.
+
+>**Important Note:** It's highly recommened to retain the scss files and directory structure as it is. Use `_add-on-styles.scss` for your custom additional css style definitions.
+
 
 
 ### 4. Compile the `scss` files into `css`
@@ -44,5 +48,30 @@ node-sass -c ~path\to\scss\ ~path\to\generated\css\
 ```
 > **Note:** The above command will complile the `ace-theme.scss` file into `ace-theme.css`
 
+## Understanding the structure of `ace-lib-theme` theme
+The root directory of scss file contains the below important files:
 
+```scss
+\---scss
+    |   ace-theme.scss
+    |   _add-on-styles.scss
+    |   _colors.scss
+    |   _typography.scss
+    |   
+    +---components
+    |   |   
+    |   +---ace-elements
+    |   |           
+    |   +---common               
+    \---utilities
+```
+
+| File/Directory | Description |
+| -------------- |------------ |
+| ace-theme.scss    | The main scss file. It imports all other internal scss files. |
+| _add-on-styles.scss    | The scss file which contians the user customization. Any additional css definitions or customizations are expected to be part of this file.  |
+| _colors.scss   | The color palette definitions of the theme. Change the color values in this scss file. This scss file should not contain any other specifications other than color palettes and color variables. |
+| _typography.scss    | The scss file to specify the typography for the theme. It should not contain any other definitions other than typo graphy. |
+| components/ace-elements  | Directory contains the ace-lib element specific style definitions. |
+| components/common  | directory contains the internal components used inside ace-lib elements, such as checkbox, radiobutton, table, tab,etc.. |
 
