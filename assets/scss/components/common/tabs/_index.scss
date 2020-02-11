@@ -26,7 +26,6 @@
             background-color: get-theme-color($theme-colors-primary, "base", false);
             color: get-theme-color($theme-colors-primary, "base", true);
             margin-bottom: -2px;
-           
           }
 
           &.mat-tab-label-active {
@@ -45,6 +44,21 @@
           }
         }
       }
+    }
+    .mat-tab-header-pagination {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      position: relative;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      min-width: 32px;
+      cursor: pointer;
+      z-index: 2;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: none;
     }
   }
 

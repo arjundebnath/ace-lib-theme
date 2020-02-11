@@ -580,6 +580,23 @@ html > body {
   display: none;
 }
 
+.ace-theme .mat-tab-group:not(.hide-mat-tab-header) .mat-tab-header .mat-tab-header-pagination,
+.cdk-overlay-container .mat-tab-group:not(.hide-mat-tab-header) .mat-tab-header .mat-tab-header-pagination {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  min-width: 32px;
+  cursor: pointer;
+  z-index: 2;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+}
+
 .ace-theme .mat-tab-group:not(.hide-mat-tab-header) .mat-tab-body-wrapper,
 .cdk-overlay-container .mat-tab-group:not(.hide-mat-tab-header) .mat-tab-body-wrapper {
   border: 2px solid #2e7d32;
