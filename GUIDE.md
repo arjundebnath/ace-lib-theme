@@ -69,9 +69,9 @@ The root directory of scss file contains the below important files:
 | File/Directory | Description |
 | -------------- |------------ |
 | ace-theme.scss    | The main scss file. It imports all other internal scss files. |
-| _add-on-styles.scss    | The scss file which contians the user customization. Any additional css definitions or customizations are expected to be part of this file.  |
-| _colors.scss   | The color palette definitions of the theme. Change the color values in this scss file. This scss file should not contain any other specifications other than color palettes and color variables. |
-| _typography.scss    | The scss file to specify the typography for the theme. It should not contain any other definitions other than typo graphy. |
+| _add-on-styles.scss    | The scss file which contains the your addtional customizations. Any additional css definitions or customizations are to be part of this file. |
+| _colors.scss   | The color palettes definitions for the theme. Change the color values in this scss file. This scss file should not contain any other specifications other than color palettes and color variables. |
+| _typography.scss    | The scss file to specify the typography for the theme. It should not contain any other definitions other than typography definitions. |
 | components/ace-elements  | Directory contains the ace-lib element specific style definitions. |
-| components/common  | directory contains the internal components used inside ace-lib elements, such as checkbox, radiobutton, table, tab,etc.. |
+| components/common  | directory contains the internal components used inside ace-lib elements, such as checkbox, radiobutton, table, tab,etc. |
 
