@@ -18,6 +18,7 @@ Install the 'ace-lib-theme` from the npm package manager using the below command
 npm i ace-lib-theme
 ```
 
+
 ### 2. Copy the sass files 
 
 Copy the `scss` directory from `node_modules/ace-lib-theme/assets/` into the cui template's `assets/themes/` directory. If you need information about how to create a cui-template, refer to the [cui-template](https://github.com/agileapps-dev-com/agileapps-cui) documentation.
@@ -26,12 +27,12 @@ Copy the `scss` directory from `node_modules/ace-lib-theme/assets/` into the cui
 
 Make changes to the scss files as required and then compile the scss files into `ace-theme.css`. [Understand the structure of the scss files](#understanding-the-structure-of-ace-lib-theme-theme) from below.
 
->**Important Note:** It's highly recommended to retain the scss files and directory structure as it is. Use `_add-on-styles.scss` for your custom additional css style definitions.
-
-
+>**Note:** It's highly recommended to retain the scss files and directory structure as it is. Use `_add-on-styles.scss` for your custom additional css style definitions.
 
 ### 4. Compile the `scss` files into `css`
 Use the below `node-sass` command to compile the scss files into the theme css file :
+
+>**Important Note:** If you have not installed the `node-sass` package globally, you will need to install it, before you use the below command. Use `npm i node-sass -g` to install it.
 
 ```javascript
 node-sass -c ~path\to\scss -o ~path\to\generated\css\
