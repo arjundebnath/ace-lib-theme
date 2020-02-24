@@ -1,6 +1,6 @@
 {
   "name": "ace-lib-theme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "ace-lib-theme is a Sass-powered style sheet theme builder utility for ace-lib components. It can be directly dropped into your Sass powered cui templates.",
   "main": "index.js",
   "scripts": {
