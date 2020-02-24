@@ -1,2 +1,311 @@
-$light-theme: true;
- 
+// Variables
+
+// Color system
+
+//grays
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+// primary color pallete
+// $color-primary: () !default;
+// $color-primary: map-merge(
+//   (
+//     "50": #e3f2fd,
+//     "100": #bbdefb,
+//     "200": #90caf9,
+//     "300": #64b5f6,
+//     "400": #42a5f5,
+//     "500": #2196f3,
+//     "600": #1e88e5,
+//     "700": #1976d2,
+//     "800": #1565c0,
+//     "900": #0d47a1
+//   ),
+//   $color-primary
+// );
+$primary: #6200ee !default;
+$secondary: #03dac6 !default;
+$error: #b00020 !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "error": $error,
+    "light": $light,
+    "dark": $dark
+  ),
+  $theme-colors
+);
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold: 160 !default;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark: $gray-900 !default;
+$yiq-text-light: $white !default;
+
+$spacer: 1rem !default;
+
+//Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $white !default;
+$body-color: $gray-900 !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: theme-color("primary") !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-width: 1px !default;
+$border-color: $gray-300 !default;
+
+$border-radius: 0 !default; //0.25rem
+
+$box-shadow: 0 0.5rem 1rem rgba($black, 0.15) !default;
+
+// Typography
+
+$font-family-base: Arial, Helvetica, sans-serif !default;
+$font-size-base: 1rem !default;
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+$text-muted: $gray-600 !default;
+
+// Tables
+
+$table-cell-padding: 0.25rem !default;
+$table-select-cell-width: 0 !default; // flex-grow values;
+
+$table-color: $body-color !default;
+$table-bg: null !default;
+$table-accent-bg: rgba($black, 0.05) !default;
+$table-hover-color: $table-color !default;
+$table-hover-bg: rgba($black, 0.075) !default;
+$table-active-bg: $table-hover-bg !default;
+
+$table-border-width: $border-width !default;
+$table-border-color: $border-color !default;
+
+$table-head-bg: $gray-200 !default;
+$table-head-color: $gray-700 !default;
+
+$table-striped-order: odd !default;
+
+$table-caption-color: $text-muted !default;
+
+// Form and inputs
+$input-label-font-weight: $font-weight-normal !default;
+
+// Input fields, like text, textarea, select
+$input-field-border-width: $border-width !default;
+$input-field-border-color: $border-color !default;
+$input-field-border-color-focus: theme-color("primary") !default;
+$input-field-border-radius: $border-radius !default;
+
+// Checkbox
+$checkbox-border-width: $border-width !default;
+$checkbox-color: theme-color("secondary") !default;
+
+// Radio button
+$radio-border-width: $border-width !default;
+$radio-color: theme-color("secondary") !default;
+
+// input field errors
+$input-field-error-border-color: theme-color("error") !default;
+$input-field-error-text-color: theme-color("error") !default;
+$input-field-error-font-size: 85% !default;
+
+// field type specific config
+//email field
+$input-type-email-display-send-mail-button: false !default;
+//lookup field
+$input-type-lookup-display-open-record-button: false !default;
+$input-type-lookup-display-search-record-button: true !default;
+//file field
+$input-type-file-background-color: theme-color("secondary") !default;
+$input-type-file-border-color: $input-type-file-background-color !default;
+$input-type-file-border-width: $border-width !default;
+$input-type-file-border-radius: $border-radius !default;
+// image field
+$input-type-image-background-color: theme-color("secondary") !default;
+$input-type-image-border-color: $input-type-image-background-color !default;
+$input-type-image-border-width: $border-width !default;
+$input-type-image-border-radius: 50% !default;
+
+//button variables
+$btn-padding: 0.5rem 0.75rem !default;
+$btn-white-space: null !default; // nowrap
+$btn-line-height: $line-height-base !default;
+$btn-border-width: $border-width !default;
+$btn-white-space: null !default; // Set to `nowrap` to prevent text wrapping
+$btn-border-width: $border-width !default;
+$btn-disabled-opacity: 0.65 !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius: $border-radius !default;
+
+// auto-complete variables
+$autocomplete-border-color: $border-color !default;
+$autocomplete-box-shadow: $box-shadow !default;
+$autocomplete-background-color: $body-bg !default;
+$autocomplete-option-background-color: theme-color("primary") !default;
+
+// Tabs
+$tab-header-border-width: 0 0 $border-width 0 !default; // top right bottom left
+$tab-header-border-color: transparent transparent $border-color transparent !default;
+
+$tab-header-tab-foucsed-background-color: rgba(theme-color("secondary"), 0.05) !default;
+$tab-header-tab-foucsed-color: $body-color !default;
+$tab-header-tab-active-link-bar-color: theme-color("secondary") !default;
+
+$tab-content-border-width: 0 0 0 0 !default; // top right bottom left
+$tab-content-border-color: $border-color !default;
+$tab-content-padding: 0 0 0 0 !default; // top right bottom left
+
+// Datepicker
+$datepicker-background-color: $body-bg !default;
+$datepicker-border-width: $border-width !default;
+$datepicker-border-color: $border-color !default;
+$datepicker-control-btn-background-color: $body-bg !default;
+$datepicker-btn-outline-style: $btn-border-width auto theme-color("primary") !default;
+$datepicker-control-btn-border-radius: $border-radius !default;
+$datepicker-table-cell-radius: $border-radius !default;
+$datepicker-table-header-color: $body-color !default;
+$datepicker-table-header-font-weight: $font-weight-normal !default;
+$datepicker-date-focus-background-color: theme-color("dark") !default;
+$datepicker-date-selected-background-color: theme-color("primary") !default;
+
+//Records view
+$records-view-profilePic-border-radius: 50% !default;
+$records-view-actionMenu-btn-border-radius: 50% !default;
+$records-view-casenumber-color: theme-color("primary") !default;
+$records-view-loadmore-color: theme-color("primary") !default;
+$records-view-loadmore-background-color: $body-bg !default;
+$records-view-loadmore-border-width: $border-width !default;
+$records-view-loadmore-border-color: $border-color !default;
+$records-view-pagination-background-color: $body-bg !default;
+$records-view-pagination-border-width: $border-width !default;
+$records-view-pagination-border-color: $border-color !default;
+$records-view-pagination-btn-border-radius: 50% !default;
+
+// Record task
+$record-task-header-background-color: transparent !default;
+$record-task-header-btn-border-radius: 50% !default;
+$record-task-body-background-color: theme-color("light") !default;
+$record-task-name-color: theme-color("primary") !default;
+$record-task-subheader-background-color: theme-color("light") !default;
+$record-task-header-font-size: $h2-font-size !default;
+$record-task-subheader-font-size: $h3-font-size !default;
+
+// Record process
+$record-process-header-background-color: transparent !default;
+$record-process-body-background-color: theme-color("light") !default;
+$record-process-name-color: theme-color("primary") !default;
+$record-process-header-font-size: $h2-font-size !default;
+
+// Role switcher
+$role-switcher-background-color: theme-color("light") !default;
+$role-switcher-list-border-focus: $border-width solid theme-color("primary") !default;
+$role-switcher-list-background-color-focus: transparent !default;
+
+// Record actions
+$record-action-background-color: theme-color("light") !default;
+$record-action-list-border-focus: $border-width solid theme-color("primary") !default;
+$record-action-list-background-color-focus: transparent !default;
+
+// object views list
+$views-list-background-color: theme-color("light") !default;
+$views-list-border-focus: $border-width solid theme-color("primary") !default;
+$views-list-background-color-focus: transparent !default;
+
+// Activity history
+$activity-history-date-style: theme-color("primary") !default;
+$activity-history-mat-divider: theme-color("primary") !default;
+$activity-history-icon-border-radius: 50% !default;
+
+// Related information
+$related-info-header-background: transparent !default;
+$related-info-header-text-color: inherit !default;
+
+//View Configuration
+$filter-section-background: $gray-100 !default;
+$add-new-filter-button-color: $primary !default;
+$remove-filter-button-color: $primary !default; 
+$view-config-background: transparent !default;
+
+// Mat-Chip variables
+$chip-background-color: theme-color("primary") !default;
+$chip-border-width: 0 0 0 0 !default;
+$chip-border-color: $border-color !default;
+$chip-border-radius: 16px !default;
+
+//dialog
+$dialog-title-font-size: $h4-font-size !default;
+$dialog-title-line-height: $line-height-base !default;
+$dialog-title-close-button-color: $body-color !default;
+$dialog-title-close-button-color-focus: theme-color("primary") !default;
+
+$dialog-actions-border-width: $border-width !default;
+$dialog-actions-border-radius: $border-radius !default;
+$dialog-actions-primary-color: theme-color("primary") !default;
+$dialog-actions-primary-color-hover: darken($dialog-actions-primary-color, 15%) !default;
+$dialog-actions-secondary-color: $dialog-actions-primary-color !default;
+$dialog-actions-cancel-color: theme-color("dark") !default;
+
+//divider
+$divider-color: $border-color !default;
+
+//paginator
+$paginator-button-color: theme-color("primary") !default;
+$paginator-button-color-hover: darken(theme-color("primary"), 20%) !default;
+$paginator-button-disabled-opacity: $btn-disabled-opacity !default;
+
+//progressbar
+$progressbar-complete-color: theme-color("primary") !default;
+$progressbar-buffer-color: scale-color(theme-color("primary"), $lightness: 60%) !default;
+
+//tooltip
+
+$tooltip-background-color: theme-color("dark") !default;
+$tooltip-font-size: 80% !default;
+$tooltip-max-width: 100% !default;
+$tooltip-margin: 0 0 0 0 !default;

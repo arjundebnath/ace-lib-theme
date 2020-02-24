@@ -1,0 +1,14 @@
+ace-record-process {
+    .header-container {
+        background-color: $record-process-header-background-color;
+        h2 {
+            font-size: $record-process-header-font-size;
+        }
+    }
+    .sidePanel-componet-body {
+        background-color: $record-process-body-background-color;
+        .mat-list-item .mat-list-text a {
+            color: $record-process-name-color;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+ace-object-views-list {
+    div.ace-theme {
+        background-color: $views-list-background-color;
+        .ace-list-group.viewlists-info {
+            &:focus {
+                border: $views-list-border-focus;
+                background-color: $views-list-background-color-focus;
+            }
+        }
+    }
+}

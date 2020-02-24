@@ -1,0 +1,14 @@
+ace-role-switcher {
+    div.ace-theme {
+        background-color: $role-switcher-background-color;
+        .ace-list-item {
+            button {
+                @include hover-focus() {
+                    outline: none;
+                    border: $role-switcher-list-border-focus;
+                    background-color: $role-switcher-list-background-color-focus;
+                }
+            }
+        }
+    }
+}

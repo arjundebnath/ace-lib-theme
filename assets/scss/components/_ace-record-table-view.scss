@@ -1,0 +1,40 @@
+ace-records-table-view {
+    .mat-table {
+        .profile-pic {
+            border-radius: $records-view-profilePic-border-radius;
+        }
+        .mat-column-actionButton.action-column .mat-icon-button {
+            border-radius: $records-view-actionMenu-btn-border-radius;
+        }
+        .mat-column-case_number.case-number-column a{
+            color: $records-view-casenumber-color;
+        }
+    }
+    .load-more-data {
+        background-color:  $records-view-loadmore-background-color;
+        border: $records-view-loadmore-border-width solid $records-view-loadmore-border-color;
+        border-top: none;
+        a {
+            color: $records-view-loadmore-color;
+        }
+        mat-divider.mat-divider {
+            border-top-width: $records-view-loadmore-border-width;
+            border-top-style: solid;
+            border-color: $records-view-loadmore-border-color;
+        }
+    }
+    .paginator {
+        background-color: $records-view-pagination-background-color;
+        color: color-yiq($records-view-pagination-background-color);
+        border: $records-view-pagination-border-width solid $records-view-pagination-border-color;
+        border-top: none;
+        mat-divider.mat-divider {
+            border-top-width: $records-view-pagination-border-width;
+            border-top-style: solid;
+            border-color: $records-view-pagination-border-color;
+        }
+        .mat-paginator button {
+            border-radius: $records-view-pagination-btn-border-radius;
+        }
+    }
+}

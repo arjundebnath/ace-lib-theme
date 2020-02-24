@@ -1,0 +1,7 @@
+.mat-tooltip {
+  background-color: $tooltip-background-color;
+  font-size: $tooltip-font-size;
+  margin: $tooltip-margin;
+  max-width: $tooltip-max-width;
+  color: color-yiq($tooltip-background-color);
+}

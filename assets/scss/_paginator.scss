@@ -1,0 +1,26 @@
+.mat-paginator {
+  .mat-paginator-container {
+    .mat-paginator-range-actions {
+      button {
+        &:not(:disabled):not(.disabled):enabled {
+          color: $paginator-button-color;
+          @include hover-focus() {
+            color: $paginator-button-color-hover;
+          }
+        }
+        &.disabled,
+        &:disabled {
+          opacity: $paginator-button-disabled-opacity;
+        }
+
+        &.mat-icon-button {
+          border-radius: 0;
+          background: transparent none;
+          .mat-button-ripple {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

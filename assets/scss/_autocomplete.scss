@@ -1,0 +1,17 @@
+.mat-autocomplete-panel {
+    border: $autocomplete-border-color;
+    box-shadow: $autocomplete-box-shadow;
+    background-color: $autocomplete-background-color;
+
+    .mat-option {
+        @include hover() {
+            color: color-yiq(darken($autocomplete-option-background-color, 7.5%));
+            background-color: darken($autocomplete-option-background-color, 7.5%);
+        }
+
+        &.mat-active {
+            color: color-yiq(darken($autocomplete-option-background-color, 7.5%));
+            background-color: darken($autocomplete-option-background-color, 7.5%);
+        }
+    }
+}

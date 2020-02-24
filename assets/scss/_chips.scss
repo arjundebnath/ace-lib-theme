@@ -1,0 +1,17 @@
+mat-chip-list {
+    .mat-chip {
+        color: color-yiq($chip-background-color);
+        background-color: $chip-background-color;
+        border-radius: $chip-border-radius;
+    
+        @include border-solid($chip-border-width, $chip-border-color);
+        
+        @include hover-focus() {
+            color: color-yiq(darken($chip-background-color, 7.5%));
+            background-color: darken($chip-background-color, 7.5%);
+        }
+        .mat-ripple-element {
+            display: none;
+        }
+    }
+}

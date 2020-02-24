@@ -1,0 +1,23 @@
+ace-record-task-view {
+    .header-container {
+        background-color: $record-task-header-background-color;
+        h2 {
+            font-size: $record-task-header-font-size;
+        }
+        button {
+            border-radius: $record-task-header-btn-border-radius;
+        }
+    }
+    .sidePanel-componet-body {
+        background-color: $record-task-body-background-color;
+        .mat-list-item a {
+            color: $record-task-name-color;
+        }
+        .mat-subheader {
+            h3 {
+                font-size: $record-task-subheader-font-size;
+            }
+            background-color: $record-task-subheader-background-color;
+        }
+    }
+}

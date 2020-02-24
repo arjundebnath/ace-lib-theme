@@ -1,0 +1,28 @@
+mat-tab-group {
+  mat-tab-header {
+    border-width: $tab-header-border-width;
+    border-style: solid;
+    border-color: $tab-header-border-color;
+
+    .mat-ink-bar {
+      background-color: $tab-header-tab-active-link-bar-color;
+    }
+    .mat-tab-labels {
+      .mat-tab-label {
+        .mat-ripple-element {
+          display: none;
+        }
+        &.cdk-focused {
+          background-color: $tab-header-tab-foucsed-background-color;
+          color: $tab-header-tab-foucsed-color;
+        }
+      }
+    }
+  }
+  mat-tab-body {
+    padding: $tab-content-padding;
+    border-width: $tab-content-border-width;
+    border-style: solid;
+    border-color: $tab-content-border-color;
+  }
+}

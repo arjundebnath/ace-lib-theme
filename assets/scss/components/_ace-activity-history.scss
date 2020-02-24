@@ -1,0 +1,28 @@
+aac-activity-history {
+    .date-style {
+      color: $activity-history-date-style;
+    }
+    .mat-divider.mat-divider-horizontal {
+        color: $activity-history-mat-divider;
+    }
+    .time-line-container:before {
+      border-right: 4px solid $primary;
+    }
+    .timeline-divider {
+      border: 7px solid $primary;
+    }
+    .timeline-icon {
+      border: 1px solid $primary;
+      width: 32px;
+      height: 32px;
+      border-radius: $activity-history-icon-border-radius;
+      .icon-elem {
+        border-radius: $activity-history-icon-border-radius;
+        margin-top: 3px;
+      }
+    }
+    .timeline-image {
+      box-shadow: 1px 1px 1px 0px $primary;
+    }
+  }
+  

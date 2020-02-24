@@ -1,0 +1,26 @@
+ace-view-configuration {
+    .custom-toggle .mat-button-toggle.mat-button-toggle-checked {
+        background: $primary;
+        color: color-yiq($primary);
+    }
+    .custom-toggle .mat-button-toggle {
+        border: 1px solid $primary;
+        border-radius: 4px;
+    }
+    .wrapper .line {
+        background: $primary;
+    }
+    .body-container .filter-section {
+        background: $filter-section-background;
+    }
+    .form-container .mat-icon-button {
+        color: $add-new-filter-button-color;
+    }
+    .date-filter-section .remove-button {
+        background: $remove-filter-button-color;
+        color: color-yiq($remove-filter-button-color);
+    }
+    .mat-dialog-content .mat-tab-body-wrapper {
+        background: transparent;
+    }
+}

@@ -1,0 +1,70 @@
+.mat-dialog-container {
+  .dialog-title-container {
+    .mat-dialog-title {
+      line-height: $dialog-title-line-height;
+      font-size: $dialog-title-font-size;
+    }
+    button {
+      &.mat-icon-button {
+        border-radius: 0;
+
+        .mat-button-ripple {
+          display: none;
+        }
+      }
+      &.dialog-close {
+        color: $dialog-title-close-button-color;
+        background-color: transparent;
+        border: 0;
+        @include hover-focus() {
+          color: $dialog-title-close-button-color-focus;
+          outline: none;
+        }
+      }
+    }
+    .dialog-back-button {
+      display: none;
+    }
+  }
+  .dialog-actions-container,
+  .mat-dialog-actions {
+    .ace-btn {
+      border-width: $dialog-actions-border-width;
+      border-style: solid;
+      border-radius: $dialog-actions-border-radius;
+      &.ace-dialog-primary-action {
+        background-color: $dialog-actions-primary-color;
+        color: color-yiq($dialog-actions-primary-color);
+        border-color: $dialog-actions-primary-color;
+
+        @include hover-focus() {
+          background-color: $dialog-actions-primary-color-hover;
+          color: color-yiq($dialog-actions-primary-color-hover);
+          border-color: $dialog-actions-primary-color-hover;
+        }
+      }
+      &.ace-dialog-secondary-action {
+        background-color: transparent;
+        color: $dialog-actions-secondary-color;
+        border-color: $dialog-actions-secondary-color;
+
+        @include hover-focus() {
+          background-color: $dialog-actions-secondary-color;
+          color: color-yiq($dialog-actions-secondary-color);
+          border-color: $dialog-actions-secondary-color;
+        }
+      }
+      &.ace-dialog-cancel-action {
+        background-color: transparent;
+        color: $dialog-actions-cancel-color;
+        border-color: $dialog-actions-cancel-color;
+
+        @include hover-focus() {
+          background-color: $dialog-actions-cancel-color;
+          color: color-yiq($dialog-actions-cancel-color);
+          border-color: $dialog-actions-cancel-color;
+        }
+      }
+    }
+  }
+}

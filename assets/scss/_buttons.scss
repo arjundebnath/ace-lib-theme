@@ -1,0 +1,105 @@
+.ace-btn {
+  display: inline-block;
+  white-space: $btn-white-space;
+  background-color: transparent;
+  color: $body-color;
+  border: $btn-border-width solid transparent;
+  vertical-align: middle;
+  padding: $btn-padding;
+  border-radius: $btn-border-radius;
+  line-height: $btn-line-height;
+  @include hover() {
+    color: $body-color;
+    text-decoration: none;
+  }
+  &:focus,
+  &.focus {
+    outline: 0;
+    // box-shadow: $btn-focus-box-shadow;
+  }
+
+  // Disabled comes first so active can properly restyle
+  &.disabled,
+  &:disabled {
+    opacity: $btn-disabled-opacity;
+    // @include box-shadow(none);
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    // @include box-shadow($btn-active-box-shadow);
+
+    &:focus {
+      //   @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+    }
+  }
+  .mat-button-ripple {
+    display: none;
+  }
+
+  // base variant
+  @each $color, $value in $theme-colors {
+    &.ace-#{$color} {
+      color: color-yiq($value);
+      background-color: $value;
+      border-color: $value;
+      @include hover-focus() {
+        color: color-yiq(darken($value, 7.5%));
+        background-color: darken($value, 7.5%);
+        border-color: darken($value, 10%);
+      }
+
+      &.disabled,
+      &:disabled {
+        color: color-yiq($value);
+        background-color: $value;
+        border-color: $value;
+      }
+
+      &:not(:disabled):not(.disabled):active,
+      &:not(:disabled):not(.disabled).active {
+        color: color-yiq(darken($value, 10%));
+        background-color: darken($value, 10%);
+        border-color: darken($value, 12.5%);
+      }
+    }
+  }
+
+  //outline variant
+  @each $color, $value in $theme-colors {
+    &.ace-outline-#{$color} {
+      color: $value;
+      background-color: transparent;
+      border-color: $value;
+      @include hover() {
+        color: color-yiq($value);
+        background-color: $value;
+        border-color: $value;
+      }
+
+      &:focus,
+      &.focus {
+        box-shadow: 0 0 0 1px rgba($value, 0.5);
+      }
+      &.disabled,
+      &:disabled {
+        color: $value;
+        background-color: transparent;
+      }
+
+      &:not(:disabled):not(.disabled):active,
+      &:not(:disabled):not(.disabled).active {
+        color: color-yiq($value);
+        background-color: $value;
+        border-color: $value;
+      }
+    }
+  }
+
+  &.ace-reset-btn {
+    border-width: $btn-border-width;
+    border-style: solid;
+    vertical-align: middle;
+    border-radius: $btn-border-radius;
+  }
+}

@@ -1,0 +1,102 @@
+mat-table {
+  &.mat-table {
+    width: 100%;
+    margin-bottom: $spacer;
+    color: $table-color;
+    background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+
+    .mat-header-cell,
+    .mat-cell {
+      padding: $table-cell-padding;
+      vertical-align: top;
+      border-top: $table-border-width solid $table-border-color;
+
+      &.ace-multi-select-column {
+        flex-grow: $table-select-cell-width;
+        min-width: inherit;
+        max-width: 120px;
+      }
+    }
+
+    .mat-header-row .mat-header-cell {
+      vertical-align: bottom;
+      border-bottom: (2 * $table-border-width) solid $table-border-color;
+      color: $table-head-color;
+      background-color: $table-head-bg;
+
+      &:not(.select-box-list),
+      &:not(.profile-pic-column) {
+        padding: $table-cell-padding;
+        min-width: inherit;
+      }
+    }
+    & > .mat-footer-row,
+    & > .mat-header-row,
+    & > .mat-row {
+      border: 0;
+      align-items: stretch !important;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+// Border versions
+//
+// Add or remove borders all around the table and between all the columns.
+
+.ace-table-bordered {
+  .mat-table {
+    border: $table-border-width solid $table-border-color;
+
+    .mat-header-cell,
+    .mat-cell {
+      border: $table-border-width solid $table-border-color;
+    }
+
+    .mat-header-row {
+      .mat-header-cell {
+        border-bottom-width: 2 * $table-border-width;
+      }
+    }
+  }
+}
+
+.ace-table-borderless {
+  .mat-table {
+    border: 0;
+    .mat-header-cell,
+    .mat-cell,
+    .mat-header-row .mat-header-cell,
+    .mat-row {
+      border: 0;
+    }
+  }
+}
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.ace-table-striped {
+  .mat-table {
+    .mat-row:nth-of-type(#{$table-striped-order}) {
+      background-color: $table-accent-bg;
+    }
+  }
+}
+
+// Hover effect
+//
+// Placed here since it has to come after the potential zebra striping
+
+.ace-table-hover {
+  .mat-table {
+    .mat-row {
+      @include hover() {
+        color: $table-hover-color;
+        background-color: $table-hover-bg;
+      }
+    }
+  }
+}

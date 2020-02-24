@@ -1,0 +1,13 @@
+ace-record-actions {
+    div.ace-theme {
+        background-color: $record-action-background-color;
+        .actions-list {
+            li {
+                @include hover-focus() {
+                    border: $record-action-list-border-focus;
+                    background-color: $record-action-list-background-color-focus;
+                }
+            }
+        }
+    }
+}

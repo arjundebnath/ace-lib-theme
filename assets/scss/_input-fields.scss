@@ -1,0 +1,150 @@
+// label type graphy
+.form-group {
+  .label-container label {
+    font-weight: $input-label-font-weight;
+  }
+}
+// field config
+.form-control {
+  &.ace-field-input,
+  &.ace-field-textarea,
+  &.ace-field-select {
+    border-radius: $input-field-border-radius;
+    border: $input-field-border-width solid $input-field-border-color;
+
+    &:focus {
+      border: $input-field-border-width solid $input-field-border-color-focus;
+      box-shadow: none;
+    }
+  }
+}
+
+// input group border for lookup,email,date,date time, url fields
+.input-group {
+  border-radius: $input-field-border-radius;
+  border: $input-field-border-width solid $input-field-border-color;
+  .form-control {
+    &.ace-field-input,
+    &.ace-field-textarea,
+    &.ace-field-select {
+      border-radius: $input-field-border-radius;
+      border: 0;
+      &:focus {
+        border: 0;
+        box-shadow: none;
+      }
+    }
+  }
+  .input-group-append {
+    .ace-btn {
+      border: 0;
+      border-radius: $input-field-border-radius;
+      &:focus,
+      &:active,
+      &:not(:disabled):not(.disabled):active,
+      &:hover {
+        // border: $input-field-border-width solid $input-field-border-color-focus;
+        box-shadow: none;
+        background-color: $input-field-border-color-focus;
+        color: color-yiq($input-field-border-color-focus);
+        // box-shadow: 0 0 1px 0px $input-field-border-color-focus;
+      }
+    }
+  }
+
+  &:focus-within {
+    border: $input-field-border-width solid $input-field-border-color-focus;
+    box-shadow: 0 0 1px 0px $input-field-border-color-focus;
+  }
+}
+
+// field errors
+
+.form-group {
+  &.has-error {
+    color: $input-field-error-text-color;
+    .form-control {
+      border-color: $input-field-error-border-color;
+    }
+    .input-group {
+      &:focus-within {
+        border: $input-field-border-width solid $input-field-error-border-color;
+        box-shadow: none;
+      }
+    }
+    .help-block {
+      .block-element {
+        font-size: $input-field-error-font-size;
+      }
+    }
+  }
+}
+.section-has-error {
+  color: $input-field-error-text-color;
+}
+
+//field type specific config
+
+//email field
+aac-email-field {
+  .input-group-append {
+    @if $input-type-email-display-send-mail-button == false {
+      display: none;
+    }
+  }
+}
+//lookup field
+aac-lookup-field {
+  .input-group {
+    .input-group-append {
+      @if $input-type-lookup-display-search-record-button ==
+        false and
+        $input-type-lookup-display-open-record-button ==
+        false
+      {
+        display: none;
+      }
+      .ace-search-btn {
+        @if $input-type-lookup-display-search-record-button == false {
+          display: none;
+        }
+      }
+      .ace-field-link-btn {
+        @if $input-type-lookup-display-open-record-button == false {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// file & image field
+aac-file-field {
+  .ace-btn {
+    background-color: $input-type-file-background-color;
+    color: color-yiq($input-type-file-background-color);
+    border: $input-type-file-border-width solid $input-type-file-border-color;
+    border-radius: $input-type-file-border-radius;
+
+    @include hover-focus-active-not-disabled() {
+      color: color-yiq(darken($input-type-file-background-color, 7.5%));
+      background-color: darken($input-type-file-background-color, 7.5%);
+      border-color: darken($input-type-file-background-color, 10%);
+      box-shadow: none;
+    }
+
+    &.imageField-btn {
+      background-color: $input-type-image-background-color;
+      color: color-yiq($input-type-image-background-color);
+      border: $input-type-image-border-width solid $input-type-image-border-color;
+      border-radius: $input-type-image-border-radius;
+
+      @include hover-focus-active-not-disabled() {
+        color: color-yiq(darken($input-type-image-background-color, 7.5%));
+        background-color: darken($input-type-image-background-color, 7.5%);
+        border-color: darken($input-type-image-background-color, 10%);
+        box-shadow: none;
+      }
+    }
+  }
+}

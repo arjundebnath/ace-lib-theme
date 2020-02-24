@@ -1,0 +1,44 @@
+.mat-datepicker-content {
+    background-color: $datepicker-background-color;
+    border-width: $datepicker-border-width;
+    border-style: solid;
+    border-color: $datepicker-border-color;
+  
+    .mat-calendar-header {
+        .mat-calendar-controls {
+            button {
+                color: color-yiq($datepicker-control-btn-background-color);
+                background-color: $datepicker-control-btn-background-color;
+                @include hover-focus() {
+                    outline: $datepicker-btn-outline-style;
+                }
+            }
+            .mat-icon-button {
+                border-radius: $datepicker-control-btn-border-radius;
+                .mat-button-ripple {
+                    display: none;
+                }
+            }
+        }
+    }
+    .mat-calendar-content {
+        .mat-calendar-table {
+            .mat-calendar-table-header th {
+                color: $datepicker-table-header-color;
+                font-weight: $datepicker-table-header-font-weight;
+            }
+            .mat-calendar-body-active {
+                background-color: $datepicker-date-focus-background-color;
+                color: color-yiq($datepicker-date-focus-background-color);
+            }
+            .mat-calendar-body-cell-content {
+                border-radius: $datepicker-table-cell-radius;
+                &.mat-calendar-body-selected {
+                    background-color: $datepicker-date-selected-background-color;
+                    color: color-yiq($datepicker-date-selected-background-color);
+                }
+            }
+        }
+    }
+  }
+  
