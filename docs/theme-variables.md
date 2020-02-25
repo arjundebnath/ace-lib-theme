@@ -13,7 +13,7 @@ Below varible availables are availble to customize.
 * [Progressbar]()
 * [Date picker]()
 * [Tooltip]()
-* [Tabs]()
+* [Tabs](variables/tabs.md)
 
 ## Component Specific
 * [<ace-activity-history\>]()
